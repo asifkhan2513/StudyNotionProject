@@ -29,7 +29,7 @@ import ViewCourse from "./pages/ViewCourse";
 import VideoDetails from "./components/core/ViewCourse/VideoDetails";
 import Instructor from "./components/core/Dashboard/InstructorDashboard/Instructor";
 import "./locomotive-scroll.css";
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useRef } from "react";
 
 function App() {
@@ -37,21 +37,10 @@ function App() {
   const navigate = useNavigate();
 
   const { user } = useSelector((state) => state.profile);
-  // locomotive scroll
-
-  const scrollRef = useRef(null);
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-    });
-    
-  });
-
   return (
     <div
       className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter"
-      ref={scrollRef}
+     
     >
       <Navbar />
       <Routes>

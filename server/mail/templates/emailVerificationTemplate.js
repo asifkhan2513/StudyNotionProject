@@ -42,6 +42,7 @@ const otpTemplate = (otp) => {
 			.cta {
 				display: inline-block;
 				padding: 10px 20px;
+				
 				background-color: #FFD60A;
 				color: #000000;
 				text-decoration: none;
